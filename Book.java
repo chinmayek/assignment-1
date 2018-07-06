@@ -1,16 +1,10 @@
-import java.util.Scanner;
 public class Book {
 
     public float price;
     public String title;
 
-    Scanner sc=new Scanner(System.in);
-
     public float getPrice() {
-        System.out.println("enter the price");
-        float x=sc.nextFloat();
-        sc.nextLine();
-        return x;
+        return price;
     }
 
     public void setPrice(float price) {
@@ -18,9 +12,7 @@ public class Book {
     }
 
     public String getTitle() {
-        System.out.println("enter the title");
-        String y=sc.nextLine();
-        return y;
+        return title;
     }
 
 
