@@ -32,19 +32,14 @@ public class Base {
             System.out.println("sorry, max contact already filled ");
     }
 
-    /*public void List(){
-            String[] arr = list[e].split(" ");
-            System.out.println("contact " + e + " \nname : " + arr[0] + " num : " + arr[1]);
-        }
-
-    }*/
-
-
     public String toString() {
-        System.out.println("name    num");
+       // System.out.println("name    num");
         String temp = "";
-        for (int i = 0; i < count; i++) {
-            temp = temp + " " + list[i]+"\n";
+        for (int i = 0; i < count; i++)
+        {
+            // temp = temp +" "+ list[i]+"\n";
+            String[] arr=list[i].split(" ");
+            temp = temp + "Contact "+(i+1)+"\nname : "+arr[0]+"  number : "+arr[1]+"\n";
         }
         return temp;
     }
