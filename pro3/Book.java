@@ -1,3 +1,5 @@
+package pro3;
+
 public class Book {
 
     public float price;

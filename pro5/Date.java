@@ -1,4 +1,4 @@
-package assignment5;
+package pro5;
 
 import java.util.Scanner;
 public class Date {

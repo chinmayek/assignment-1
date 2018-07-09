@@ -1,49 +1,55 @@
 package pro4;
 
-import java.util.Scanner;
 public class Rectangle {
-    private float len;
-    private float wid;
-    private float area;
-    private float perimeter;
+    private double length;
+    private double width;
+
     Rectangle(){
-        len=0;
-        wid=0;
-        area=0;
-        perimeter=0;
+        length=0;
+        width=0;
     }
-    Rectangle(float a, float b) {
-        len = a;
-        wid = b;
+    Rectangle(double length, double width) {
+        this.length = length;
+        this.width = width;
     }
 
-    public float getLen() {
-        return len;
+    public double getLength() {
+        return length;
     }
 
-    public void setLen(float len) {
-        this.len = len;
+    public int setLength(double length) {
+        int x=0;
+        if(length<0 || length>20) {
+            System.out.println("length is not in the range");
+            return x;
+        }
+        else {
+            this.length = length;
+            return (x = 1);
+        }
     }
 
-    public float getWid() {
-        return wid;
+    public double getWidth() {
+        return width;
     }
 
-    public void setWid(float wid) {
-        this.wid = wid;
+    public int setWidth(float width) {
+        int y=0;
+        if(width<0 || width>20) {
+            System.out.println("width is not in the range");
+            return y;
+        }
+        else {
+            this.width = width;
+            return (y = 1);
+        }
     }
 
-    public void area(){
-        area=len*wid;
+    public double area(){
+        return (length*width);
     }
-    public void perimeter() {
-        perimeter=2*(len+wid);
+    public double perimeter() {
+        return (2*(length+width));
     }
 
-    public void display(){
-        System.out.println("length is "+len);
-        System.out.println("breadth is "+wid);
-        System.out.println("area is "+area);
-        System.out.println("perimeter is "+perimeter);
-    }
 }

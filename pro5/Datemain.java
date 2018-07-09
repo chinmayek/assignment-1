@@ -1,4 +1,4 @@
-package assignment5;
+package pro5;
 
 public class Datemain {
     public static void main(String args[]){
@@ -7,3 +7,6 @@ public class Datemain {
         d2.alter();
     }
 }
+
+
+

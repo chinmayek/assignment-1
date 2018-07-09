@@ -14,7 +14,7 @@ public class Rectangle {
     }
 
     public float getLen() {
-        return len;
+       return len;
     }
 
     public void setLen(float len) {
@@ -22,7 +22,7 @@ public class Rectangle {
     }
 
     public float getBre() {
-        return bre;
+       return bre;
     }
 
     public void setBre(float bre) {
